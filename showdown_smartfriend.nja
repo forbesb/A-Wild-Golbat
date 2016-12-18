@@ -1,0 +1,6 @@
+{
+  "venv": "", 
+  "name": "showdown_smartfriend", 
+  "license": "GNU General Public License v3", 
+  "description": "A damage calculator for Pokemon Showdown that will directly take the information known to your account."
+}
