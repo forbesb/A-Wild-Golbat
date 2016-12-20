@@ -4,7 +4,10 @@ class Showdown_Bot:
     def __init__(self):
         self.settingsfile = "settings.txt"
         self.parse_settings(self.settingsfile)
-        self.ws = websocket.WebSocketApp(self.url)
+        self.ws = websocket.WebSocketApp(self.url, on_close=self.on_close,
+                                         on_message=self.splitmessage,
+                                         on_error=self.on_error)
+        self.ws.on_open = self.on_open;
 
 
     def parse_settings(self, filename):
@@ -23,6 +26,15 @@ class Showdown_Bot:
             return
         print(message)
 
+    def on_open(self, message):
+        print("Opened: ", message);
+
+    def on_error(self, ws, error):
+        print("Errored: ", error)
+
+    def on_close(self, message):
+        print("Closed: ", message)
+
 
 test = Showdown_Bot()
-#test.ws.run_forever()
+test.ws.run_forever()
