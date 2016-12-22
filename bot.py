@@ -1,6 +1,7 @@
 import websocket
 import json
 import requests
+from pokemon import Pokemon
 
 # Heavy inspiration taken from https://github.com/QuiteQuiet/PokemonShowdownBot
 # In terms of how PS deals with actions/login and how websocket works
@@ -15,6 +16,7 @@ class Showdown_Bot:
                                          on_message=self.splitmessage,
                                          on_error=self.on_error)
         self.ws.on_open = self.on_open
+        self.pokemonCreated = False
 
     def parse_settings(self, filename):
         with open(filename, 'r') as f:
@@ -45,6 +47,16 @@ class Showdown_Bot:
         self.send(('|/trn '+self.user+',0,'+str(assertion)).encode('utf-8'))
         return True
 
+    def createPokemon(self, requestJSON):
+        self.pokemon = []
+        for i in range(6):
+            self.pokemon.append(Pokemon(requestJSON, i))
+
+        for p in self.pokemon:
+            p.dump()
+
+        self.pokemonCreated = True
+
 
     def splitmessage(self, ws, message):
         if not message:
@@ -53,6 +65,10 @@ class Showdown_Bot:
         splitmsg = message.split("|")
         if (splitmsg[1] == 'challstr'):
             self.login(splitmsg[2], splitmsg[3])
+        elif splitmsg[1] == 'request':
+            if not self.pokemonCreated:
+                self.createPokemon(splitmsg[2])
+
 
     def on_open(self, message):
         print("Opened: ", message);
