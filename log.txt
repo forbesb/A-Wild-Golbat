@@ -1,0 +1,163 @@
+Waiting for input: 
+Opened:  <websocket._app.WebSocketApp object at 0x7f36fc7c7940>
+|updateuser|Guest 2249514|0|169
+|formats|,1|SM Singles (beta)|[Gen 7] Random Battle,f|[Gen 7] Unrated Random Battle,b|[Gen 7] OU,e|[Gen 7] Pokebank OU,c|[Gen 7] Pokebank OU (suspect test),e|[Gen 7] Pokebank Ubers,e|[Gen 7] Pokebank UU (alpha),e|[Gen 7] Pokebank LC,e|[Gen 7] Pokebank Anything Goes,e|[Gen 7] CAP,e|[Gen 7] Battle Spot Singles,e|[Gen 7] Battle Spot Special 1,e|[Gen 7] Custom Game,c|,1|SM Doubles (beta)|[Gen 7] Random Doubles Battle,f|[Gen 7] Pokebank Doubles OU,e|[Gen 7] Pokebank Doubles Ubers,e|[Gen 7] VGC 2017,e|[Gen 7] Battle Spot Doubles,e|[Gen 7] Doubles Custom Game,c|,2|OM of the Month|[Gen 7] STABmons,e|[Gen 7] Middle Cup,c|,2|Other Metagames|[Gen 7] Balanced Hackmons (suspect test),e|[Gen 7] 1v1,e|[Gen 7] Monotype,e|[Gen 7] Mix and Mega,e|[Gen 7] Almost Any Ability,e|[Gen 7] Sketchmons,e|[Gen 7] Hidden Type,c|[Gen 7] 2v2 Doubles,c|OU Theorymon,c|Gen-NEXT OU,c|,2|Randomized Metas|Battle Factory,f|[Gen 7] Challenge Cup 1v1,f|[Gen 7] Monotype Random Battle,d|[Gen 7] Hackmons Cup,f|[Gen 7] Doubles Hackmons Cup,d|,3|RoA Spotlight|[Gen 5] Anything Goes,e|,3|ORAS Singles|OU,e|Ubers,e|UU,e|RU,e|NU,e|PU,e|LC,e|Anything Goes,e|CAP,c|Battle Spot Singles,e|Inverse Battle,c|[Gen 6] Random Battle,f|Custom Game,c|,3|ORAS Doubles/Triples|Doubles OU,e|Doubles Ubers,c|Doubles UU,e|VGC 2016,e|Battle Spot Doubles,e|[Gen 6] Random Doubles Battle,d|Doubles Custom Game,c|Battle Spot Triples,e|Triples Custom Game,c|,4|BW2 Singles|[Gen 5] OU,e|[Gen 5] Ubers,e|[Gen 5] UU,e|[Gen 5] RU,e|[Gen 5] NU,e|[Gen 5] LC,e|[Gen 5] GBU Singles,c|[Gen 5] Random Battle,d|[Gen 5] Custom Game,c|,4|BW2 Doubles|[Gen 5] Doubles OU,e|[Gen 5] GBU Doubles,c|[Gen 5] Doubles Custom Game,c|,4|Past Generations|[Gen 4] OU,e|[Gen 4] Ubers,e|[Gen 4] UU,e|[Gen 4] LC,e|[Gen 4] Custom Game,c|[Gen 4] Doubles Custom Game,c|[Gen 3] OU,e|[Gen 3] Ubers,e|[Gen 3] Custom Game,c|[Gen 2] OU,e|[Gen 2] Ubers,c|[Gen 2] Random Battle,d|[Gen 2] Custom Game,c|[Gen 1] OU,e|[Gen 1] Ubers,c|[Gen 1] OU (tradeback),c|[Gen 1] Random Battle,f|[Gen 1] Challenge Cup,9|[Gen 1] Stadium,c|[Gen 1] Custom Game,c
+|queryresponse|rooms|null
+|challstr|4|d46f0d09f1ea836f7a1f16c8a7be4e71248e39bcaca2669b9c9cdfd9915ec88a87f3a0d6874d6cd45039d07d8522ed92eeb57ce19cbb7cead6211d55d60b7e3a97a94f365a20497d4d074451420355b187b6522883e449c517f9323a035ca7d72061c9b01655fff22efe619f3013e8ad20df982a25fad35e43243ef5eed0f23e
+|updateuser|robot_overlord|1|169
+|updatesearch|{"searching":["gen7challengecup1v1"],"games":null}
+>battle-gen7challengecup1v1-508880124
+|init|battle
+|title|robot_overlord vs. Mordofk
+|j|robot_overlord
+>battle-gen7challengecup1v1-508880124
+
+|j|Mordofk
+|updatesearch|{"searching":[],"games":{"battle-gen7challengecup1v1-508880124":"[Gen 7] Challenge Cup 1v1 Battle*"}}
+>battle-gen7challengecup1v1-508880124
+|title|robot_overlord vs. Mordofk
+>battle-gen7challengecup1v1-508880124
+
+|player|p1|robot_overlord|169
+>battle-gen7challengecup1v1-508880124
+|request|{"teamPreview":true,"side":{"name":"robot_overlord","id":"p1","pokemon":[{"ident":"p1: Finneon","details":"Finneon, L86, F","condition":"202/202","active":true,"stats":{"atk":142,"def":102,"spa":118,"spd":132,"spe":171},"moves":["blizzard","endure","uturn","return"],"baseAbility":"waterveil","item":"blackglasses","pokeball":"pokeball"},{"ident":"p1: Ledyba","details":"Ledyba, L91, F","condition":"225/225","active":false,"stats":{"atk":56,"def":82,"spa":129,"spd":175,"spe":131},"moves":["uturn","cometpunch","rollout","batonpass"],"baseAbility":"swarm","item":"groundiumz","pokeball":"pokeball"},{"ident":"p1: Gabite","details":"Gabite, L80, M","condition":"220/220","active":false,"stats":{"atk":143,"def":177,"spa":89,"spd":114,"spe":171},"moves":["takedown","confide","dracometeor","sunnyday"],"baseAbility":"roughskin","item":"coverfossil","pokeball":"pokeball"},{"ident":"p1: Palkia","details":"Palkia, L65","condition":"202/202","active":false,"stats":{"atk":195,"def":125,"spa":226,"spd":177,"spe":196},"moves":["naturalgift","strength","rocktomb","surf"],"baseAbility":"pressure","item":"aspearberry","pokeball":"pokeball"},{"ident":"p1: Parasect","details":"Parasect, L80, M","condition":"208/208","active":false,"stats":{"atk":189,"def":181,"spa":173,"spd":144,"spe":59},"moves":["worryseed","energyball","spore","swagger"],"baseAbility":"dryskin","item":"watergem","pokeball":"pokeball"},{"ident":"p1: Luvdisc","details":"Luvdisc, L85, M","condition":"188/188","active":false,"stats":{"atk":81,"def":123,"spa":132,"spd":116,"spe":244},"moves":["toxic","dive","entrainment","rest"],"baseAbility":"hydration","item":"mawilite","pokeball":"pokeball"}]},"rqid":1}
+p1: Finneon
+202 / 202
+atk: 142, def: 102, spa: 118, spd: 132, spe: 171
+p1: Ledyba
+225 / 225
+atk: 56, def: 82, spa: 129, spd: 175, spe: 131
+p1: Gabite
+220 / 220
+atk: 143, def: 177, spa: 89, spd: 114, spe: 171
+p1: Palkia
+202 / 202
+atk: 195, def: 125, spa: 226, spd: 177, spe: 196
+p1: Parasect
+208 / 208
+atk: 189, def: 181, spa: 173, spd: 144, spe: 59
+p1: Luvdisc
+188 / 188
+atk: 81, def: 123, spa: 132, spd: 116, spe: 244
+>battle-gen7challengecup1v1-508880124
+
+|player|p2|Mordofk|102
+|gametype|singles
+|gen|7
+|tier|[Gen 7] Challenge Cup 1v1
+|rated
+|seed|
+|rule|HP Percentage Mod: HP is shown in percentages
+|clearpoke
+|poke|p1|Finneon, L86, F|item
+|poke|p1|Ledyba, L91, F|item
+|poke|p1|Gabite, L80, M|item
+|poke|p1|Palkia, L65|item
+|poke|p1|Parasect, L80, M|item
+|poke|p1|Luvdisc, L85, M|item
+|poke|p2|Azelf, L70|item
+|poke|p2|Yungoos, L93, F|item
+|poke|p2|Dugtrio, L79, M|item
+|poke|p2|Latias, L68, F|item
+|poke|p2|Dedenne, L78, F|item
+|poke|p2|Brionne, L79, M|item
+|teampreview|1
+>battle-gen7challengecup1v1-508880124
+|inactive|Battle timer is now ON: inactive players will automatically lose when time's up. (requested by Mordofk)
+>battle-gen7challengecup1v1-508880124
+|inactive|You have 150 seconds to make your decision.
+>battle-gen7challengecup1v1-508880124
+|request|{"active":[{"moves":[{"move":"Blizzard","id":"blizzard","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Endure","id":"endure","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"U-turn","id":"uturn","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Return 77","id":"return","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"robot_overlord","id":"p1","pokemon":[{"ident":"p1: Finneon","details":"Finneon, L86, F","condition":"202/202","active":true,"stats":{"atk":142,"def":102,"spa":118,"spd":132,"spe":171},"moves":["blizzard","endure","uturn","return"],"baseAbility":"waterveil","item":"blackglasses","pokeball":"pokeball"}]},"rqid":2}
+>battle-gen7challengecup1v1-508880124
+
+|choice|team 1, team 2, team 3, team 4, team 5, team 6|
+|
+|start
+|switch|p1a: Finneon|Finneon, L86, F|202/202
+|switch|p2a: Latias|Latias, L68, F|100/100
+|turn|1
+>battle-gen7challengecup1v1-508880124
+|inactive|You have 150 seconds to make your decision.
+>battle-gen7challengecup1v1-508880124
+|inactive|Mordofk has 120 seconds left.
+>battle-gen7challengecup1v1-508880124
+|inactive|Mordofk has 90 seconds left.
+>battle-gen7challengecup1v1-508880124
+|inactive|Mordofk has 60 seconds left.
+>battle-gen7challengecup1v1-508880124
+|request|{"active":[{"moves":[{"move":"Blizzard","id":"blizzard","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Endure","id":"endure","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"U-turn","id":"uturn","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Return 77","id":"return","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"robot_overlord","id":"p1","pokemon":[{"ident":"p1: Finneon","details":"Finneon, L86, F","condition":"171/202","active":true,"stats":{"atk":142,"def":102,"spa":118,"spd":132,"spe":171},"moves":["blizzard","endure","uturn","return"],"baseAbility":"waterveil","item":"blackglasses","pokeball":"pokeball"}]},"rqid":3}
+>battle-gen7challengecup1v1-508880124
+
+|choice|move blizzard|
+|
+|move|p2a: Latias|Steel Wing|p1a: Finneon
+|-resisted|p1a: Finneon
+|-damage|p1a: Finneon|171/202
+|-boost|p2a: Latias|def|1
+|move|p1a: Finneon|Blizzard|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|55/100
+|
+|upkeep
+|turn|2
+>battle-gen7challengecup1v1-508880124
+|inactive|You have 150 seconds to make your decision.
+>battle-gen7challengecup1v1-508880124
+|inactive|robot_overlord has 120 seconds left.
+>battle-gen7challengecup1v1-508880124
+|request|{"active":[{"moves":[{"move":"Blizzard","id":"blizzard","pp":6,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Endure","id":"endure","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"U-turn","id":"uturn","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Return 77","id":"return","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"robot_overlord","id":"p1","pokemon":[{"ident":"p1: Finneon","details":"Finneon, L86, F","condition":"102/202","active":true,"stats":{"atk":142,"def":102,"spa":118,"spd":132,"spe":171},"moves":["blizzard","endure","uturn","return"],"baseAbility":"waterveil","item":"blackglasses","pokeball":"pokeball"}]},"rqid":4}
+>battle-gen7challengecup1v1-508880124
+
+|choice|move blizzard|
+|
+|move|p2a: Latias|Round|p1a: Finneon
+|-crit|p1a: Finneon
+|-damage|p1a: Finneon|102/202
+|move|p1a: Finneon|Blizzard|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|12/100
+|
+|upkeep
+|turn|3
+>battle-gen7challengecup1v1-508880124
+|inactive|You have 150 seconds to make your decision.
+>battle-gen7challengecup1v1-508880124
+|request|{"active":[{"moves":[{"move":"Blizzard","id":"blizzard","pp":5,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Endure","id":"endure","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"U-turn","id":"uturn","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Return 77","id":"return","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"robot_overlord","id":"p1","pokemon":[{"ident":"p1: Finneon","details":"Finneon, L86, F","condition":"55/202","active":true,"stats":{"atk":142,"def":102,"spa":118,"spd":132,"spe":171},"moves":["blizzard","endure","uturn","return"],"baseAbility":"waterveil","item":"blackglasses","pokeball":"pokeball"}]},"rqid":5}
+>battle-gen7challengecup1v1-508880124
+
+|choice|move blizzard|
+|
+|move|p2a: Latias|Round|p1a: Finneon
+|-damage|p1a: Finneon|55/202
+|move|p1a: Finneon|Blizzard|p2a: Latias|[miss]
+|-miss|p1a: Finneon|p2a: Latias
+|
+|upkeep
+|turn|4
+>battle-gen7challengecup1v1-508880124
+|inactive|You have 150 seconds to make your decision.
+>battle-gen7challengecup1v1-508880124
+
+|choice|move blizzard|
+|
+|move|p2a: Latias|Round|p1a: Finneon
+|-damage|p1a: Finneon|7/202
+|move|p1a: Finneon|Blizzard|p2a: Latias
+|-supereffective|p2a: Latias
+|-damage|p2a: Latias|0 fnt
+|faint|p2a: Latias
+|
+|win|robot_overlord
+>battle-gen7challengecup1v1-508880124
+||Ladder updating...
+|updatesearch|{"searching":[],"games":null}
+>battle-gen7challengecup1v1-508880124
+
+|player|p1
+>battle-gen7challengecup1v1-508880124
+
+|player|p2
+>battle-gen7challengecup1v1-508880124
+
+|raw|robot_overlord's rating: 1030 &rarr; <strong>1068</strong><br />(+38 for winning)
+|raw|Mordofk's rating: 1047 &rarr; <strong>1029</strong><br />(-18 for losing)
