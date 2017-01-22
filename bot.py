@@ -4,15 +4,17 @@ import requests
 import threading
 import os
 import subprocess
-from sys import executable
+from sys import executable, exit
 from pokemon import Pokemon
+import os.path
 
 # Heavy inspiration taken from https://github.com/QuiteQuiet/PokemonShowdownBot
 # In terms of how PS deals with actions/login and how websocket works
 
 # currently can only do one battle at once - TODO: multiple
 
-DEBUG_MESSAGES = False
+DEBUG_MESSAGES = True 
+DEBUG_SPLIT_MESSAGES=True
 
 class Showdown_Bot:
     def __init__(self):
@@ -27,8 +29,12 @@ class Showdown_Bot:
         self.pokemonCreated = False
         self.roomCreated = False
         self.room = ""
+        self.foundinit = False
 
     def parse_settings(self, filename):
+        if not os.path.isfile(filename):
+            return
+
         with open(filename, 'r') as f:
             for line in f:
                 splitline = line.split("=")
@@ -75,21 +81,32 @@ class Showdown_Bot:
         if not message:
             return
         if DEBUG_MESSAGES: print(message)
-        splitmsg = message.split("|")
-        if (splitmsg[1] == 'challstr'):
-            self.login(splitmsg[2], splitmsg[3])
-        elif splitmsg[1] == 'request':
-            if not self.pokemonCreated:
-                self.createPokemon(splitmsg[2])
-        elif len(splitmsg[0]) >= 1 and splitmsg[0][0] == '>':
-            if not self.roomCreated:
-                self.room=splitmsg[0][1:-1] #dropping \n
-                self.roomCreated = True
-        elif splitmsg[1] == "win":
-            self.pokemonCreated = False
-            self.roomCreated = False
-            self.room=""
-            print("Reset")
+        lines = message.split("\n")
+        splitmsgs = map(lambda x: x.split("|"), lines)
+        for splitmsg in splitmsgs:
+            if DEBUG_SPLIT_MESSAGES: print(splitmsg)
+            if len(splitmsg) == 1 :
+                if len(splitmsg[0]) > 1 and splitmsg[0][0] == '>':
+                    if not self.roomCreated and self.foundinit:
+                        print("Created Room!")
+                        self.room=splitmsg[0][1:-1] #dropping \n
+                        self.roomCreated = True
+                        self.foundinit = False
+                else:
+                    continue
+            elif splitmsg[1] == 'challstr':
+                self.login(splitmsg[2], splitmsg[3])
+            elif splitmsg[1] == 'init':
+                self.foundinit = True
+            elif splitmsg[1] == 'request':
+                if not self.pokemonCreated:
+                    self.createPokemon(splitmsg[2])
+
+            elif splitmsg[1] == "win":
+                self.pokemonCreated = False
+                self.roomCreated = False
+                self.room=""
+                print("Reset")
 
 
     def on_open(self, message):
@@ -111,7 +128,7 @@ class Showdown_Bot:
                 self.chat(msg)
 
     def threaded_chat_forever(self):
-        threading.Thread(target=self.chat_forever).start()
+        threading.Thread(target=self.chat_forever, daemon=False).start()
 
 def open_chat_term():
     os.system("gnome-terminal -e 'bash -c \"python3 chat.py; exec bash\"'")
